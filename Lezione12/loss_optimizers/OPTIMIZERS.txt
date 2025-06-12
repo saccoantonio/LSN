@@ -1,0 +1,51 @@
+OPTIMIZERS
+
+# SGD
+Test loss: 0.06608538329601288
+Test accuracy: 0.9800999760627747
+
+#RMSprop
+Test loss: 0.27111154794692993
+Test accuracy: 0.9789999723434448
+
+# ADAGRAD 
+Test loss: 0.17728033661842346
+Test accuracy: 0.947700023651123
+
+#ADADELTA
+Test loss: 0.4499737322330475
+Test accuracy: 0.8912000060081482
+
+# ADAMAX
+Test loss: 0.06457504630088806
+Test accuracy: 0.9842000007629395
+
+# NADAM
+Test loss: 0.19116026163101196
+Test accuracy: 0.9790999889373779
+
+# ============ ADAM  ============ #
+
+# ADAM base lr= 1e-3 
+Test loss: 0.14891988039016724
+Test accuracy: 0.9818000197410583
+
+# ADAM lr=1e-4
+Test loss: 0.06463054567575455
+Test accuracy: 0.9840999841690063
+
+# ADAM lr=3e-5
+Test loss: 0.07047729194164276
+Test accuracy: 0.9790999889373779
+
+# ADAM lr_in= 1e-4 e ReduceLROnPlateau e earlystopping
+Test loss: 0.057420868426561356
+Test accuracy: 0.982699990272522
+
+# ADAM lr_in= 1e-4 e ReduceLROnPlateau e earlystopping e batchnormalization
+Test loss: 0.06755762547254562
+Test accuracy: 0.980400025844574
+
+# ADAM lr_in= 1e-4 e ReduceLROnPlateau e earlystopping e batchnormalization e un layer in più da 100 neuroni
+Test loss: 0.08190074563026428
+Test accuracy: 0.979200005531311

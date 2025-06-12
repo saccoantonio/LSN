@@ -1,0 +1,49 @@
+#ifndef __funzioni__
+#define __funzioni__
+
+#include "random.h"
+
+using namespace std;
+
+// Funzione per calcolare l'errore statistico: prende in input due vettori di medie 
+// e medie quadrate e il numero di blocchi, restituisce l'errore statistico
+double error(vector<double>& av , vector<double>& av2, int n);
+
+double error_double( double AV, double AV2 , int n );
+
+// Funzione per calcolare il chi-quadrato: Confronta i valori osservati 
+// con quelli attesi e restituisce il valore del chi-quadrato
+double compute_chi_squared(int expected, vector<int>& n_i);
+
+// Funzione che verifica se una linea, lanciata a un angolo angolare, interseca una linea di distanza d
+bool Intersect(double l, double d, double ang, Random& rnd);
+
+// Funzione per calcolare la distanza quadratica
+double distanza2(const vector<double>& pos);
+
+//
+void walker(vector<double>& posizione, double step, Random& rnd);
+
+//
+void walker_cont(vector<double>& posizione, double step, Random& rnd);
+
+//
+void initiating_rnd(Random& rnd);
+
+double psi(double x, double mu, double sigma);
+
+double Hpsi(double x , double mu, double sigma);
+
+bool H_metro(double x , double y, double mu, double sigma, Random&  rnd);
+
+bool params_metro(Random& rnd, double H_old , double H_new , double beta );
+
+vector<double> H_measurement(double x, double mu, double sigma, Random&  rnd, int n_blocks, int n_steps, double& delta);
+
+void find_delta(double x0, double mu, double sigma, double& delta, int steps, Random&  rnd);
+
+
+void Execute_8_1(double mu, double sigma, double delta, int n_blocks, int n_steps);
+
+
+#endif //__funzioni__

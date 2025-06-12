@@ -1,0 +1,14 @@
+SIMULATION_TYPE        0
+RESTART                0
+TEMP                   1.1
+NPART                  108
+RHO                    0.8
+R_CUT                  2.5
+DELTA                  0.001
+NBLOCKS                500000
+NSTEPS                 1
+
+ENDINPUT
+
+delta 0.1 per MC → sim_type = 1
+delta 0.001 per MD → sim_type = 0

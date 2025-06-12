@@ -1,0 +1,7 @@
+NSTEPS  1000
+NBLOCK  100
+MU      0
+SIGMA   1
+DELTA   2.08
+
+# delta(x=0, mu=0) = 2.08
